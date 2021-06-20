@@ -5,6 +5,8 @@ body{
 	margin:0px;
 	padding:0px;
 	font-family:arial;
+	color:#505050;
+	font-size:20px;
 }
 
 ul{
@@ -19,6 +21,7 @@ nav{
 	position:fixed;
 	top:0;
 	display:flex;
+	z-index:2;
 	justify-content:space-around;
 	align-items:center;
 	height:60px;
@@ -56,28 +59,42 @@ nav ul li a{
 	align-items:center;
 	bottom:0;
 	width:100vw;
+	height:20px;
 	background-color:#505050;
 	color:#f6f5f5;
+	font-size:15px;
 }
 
 .body-container{
 	display:flex;
-	justify-content
-	margin-top:60px;
+	position:absolute;
+	top:60px;
+	bottom:20px;
+	height:auto;
+	justify-content:space-around;
 }
 
 .index-text{
-	position:absolute;
-	top:60px;
-	left:0;
-	width:80vw;
+	position:inline-flex;
+	width:70vw;
+	overflow:auto;
+}
+
+.body-container h1{
+	font-size:55px;
 }
 
 .index-right{
-	position:absolute;
-	top:60px;
-	right:0;
-	width:20vw;
-	height:100vh;
+	position:inline-flex;
+	width:28vw;
 	object-fit:cover;
+	overflow:hidden;
+}
+
+.contact ul{
+	display:flex;
+}
+
+.contact ul a{
+	margin:10px;
 }
